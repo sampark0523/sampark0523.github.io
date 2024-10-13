@@ -1,0 +1,7 @@
+body {
+    background-color: lightblue;
+}
+
+.not-bold {
+    font-weight: normal;
+}
