@@ -8,51 +8,155 @@
       body {
         background-color: lightblue;
         margin: 0;
-        font-family: Futura;
-        position: relative;
-        padding: 20px;
+        font-family: Futura, Arial, sans-serif;
+        padding: 0;
         box-sizing: border-box;
       }
 
+      .navbar {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        display: flex;
+        gap: 15px;
+      }
+
+      .navbar a {
+        text-decoration: none;
+        font-size: 1.25rem;
+        font: Futura, Arial, sans-serif;
+        color: black;
+      }
+
+      .navbar a:hover {
+        color: darkorange;
+      }
+
+      .container {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        max-width: 1000px;
+        margin: 0 auto;
+        height: 100vh;
+      }
+
       img {
-        width: 150px; /* Set the size of the square */
+        width: 275px;
         height: auto;
-        border-radius: 15px; /* Rounded corners */
-        position: absolute; /* Position image in the top-left */
-        top: 240px; /* Distance from the top of the page */
-        left: 40px; /* Distance from the left side of the page */
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow */
+        border-radius: 15px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
       }
 
       .text {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-left: 190px; /* Space to move the text to the right of the image */
-        margin-top: 175px; /* Align text vertically with the image */
+      }
+
+      .text a {
+        text-decoration: underline;
+        text-underline-offset: 4px;
+        text-decoration-thickness: 2px;
+        color: black;
+      }
+
+      .text a:hover {
+        text-decoration: none;
+        color: darkorange;
       }
 
       h1 {
-        font-size: 2.5rem;
+        font-size: 3rem;
         margin: 0;
       }
 
       p {
-        font-size: 1rem;
-        margin: 5px 0;
+        font-size: 1.25rem;
+        margin: 7.5px 0;
+        line-height: 1.6;
       }
     </style>
   </head>
   <body>
-    <img src="mypic.jpg" alt="Picture of Sam">
+    <div class="navbar">
+      <a href="#">Home</a>
+      <a href="#">Projects</a>
+      <a href="#">Music</a>
+      <a href="#">Fun</a>
+    </div>
 
-    <div class="text">
-      <h1>Hi, I'm Sam!</h1>
-      <p>A sophomore at the University of Pennsylvania, studying Computer Science and Mathematics.</p>
-      <p>Over the summer into my sophomore year under CURF (Center for Undergraduate Research & Fellowships), I worked at the Hospital of the University of Pennsylvania, where I developed a 3D virtual reality environment for doctors.</p>
-      <p>At Penn, I am part of a software development club called PennSpark, where I am a Blue Developer. I am also part of the Wharton Undergraduate Finance Club under the Quantitative Finance Committee.</p>
-      <p>My hobbies include playing basketball and snowboarding. I also like music, and I am part of PennSori, UPenn's premier Korean pop and Korean-American a cappella group</p>
-      <p>If any of that interests you, feel free to reach out!</p>
+    <div class="container">
+      <img src="mypic.jpg" alt="Picture of Sam">
+
+      <div class="text">
+        <h1>Hi, I'm Sam!</h1>
+        <p>
+          A student at the University of Pennsylvania, studying Computer
+          Science and Mathematics.
+        </p>
+        <p>
+          Recently over the summer, I conducted research under
+          <a
+            href="https://curf.upenn.edu/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            CURF
+          </a>
+          at the Hospital of the University of Pennsylvania, where I developed a 3D
+          virtual reality environment for doctors.
+        </p>
+        <p>
+          At Penn, I am a Blue Developer for
+          <a
+            href="https://pennspark.org/about/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            PennSpark
+          </a>.
+          I am also part of
+          <a
+            href="https://www.whartonfinanceclub.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            WUFC
+          </a>
+          under the Quantitative Finance Committee.
+        </p>
+        <p>
+          My hobbies include playing basketball and snowboarding. I also like
+          music, and I am part of
+          <a
+            href="https://pennsori.net/about"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            PennSori
+          </a>,
+          UPenn's premier Korean pop and Korean-American a cappella group.
+        </p>
+        <p>If any of that interests you, feel free to reach out!</p>
+        <p>
+          <a
+            href="https://www.linkedin.com/in/seohyun-sam-park-54796828b/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </a>
+          <span>|</span>
+          <a
+            href="mailto:your-email@example.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Email
+          </a>
+        </p>
+      </div>
     </div>
   </body>
 </html>
